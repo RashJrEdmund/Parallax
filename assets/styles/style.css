@@ -8,7 +8,7 @@ body {
   /* opacity: 0.8; */
 }
 
-/* STARTING SECTION1: SECTION CONTAINS BOUNT 'MY LOGO' AND NAVBAR */
+/* STARTING SECTION1: SECTION CONTAINS BOTH 'MY LOGO' AND NAVBAR */
 
 .section1 {
   background: url("../images/parallax1.jpg");
@@ -197,7 +197,7 @@ nav > a {
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: fixed;
-  height: 100vh;
+  height: 50vh;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -207,6 +207,181 @@ nav > a {
   letter-spacing: 10px;
 }
 
-/* ENDING SECTION2 AND STARTING SECTION3 */
+/* ENDING SECTION3 AND STARTING SECTION4 */
 
+.section4 {
+  background-color: green;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 
+.section4 header {
+  margin-top: 3rem;
+  font-size: 1.5rem;
+}
+
+.section4 p {
+  font-style: italic;
+}
+
+.section4 .container {
+  background-color: brown;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  width: 90%;
+  max-width: 1000px;
+  height: fit-content;
+  gap: 10px;
+}
+
+.section4 .container img {
+  width: 100%;
+}
+
+.section4 button {
+  background-color: lightgray;
+  border: none;
+  font-size: 1.2rem;
+  padding: 15px;
+  margin: 3rem auto;
+}
+
+/* ENDING SECTION4 AND STARTING SECTION5 */
+
+.section5 {
+  background: url("../images/parallax3.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  height: 40vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: 2rem;
+  color: #fff;
+  letter-spacing: 10px;
+}
+
+/* ENDING SECTION5 AND STARTING LAST SECTION */
+
+.last-section {
+  background-color: brown;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.last-section > header {
+  font-size: 1.5rem;
+  margin-top: 3rem;
+}
+
+.last-section > p {
+  font-style: italic;
+}
+
+.last-section .swing {
+  background-color: purple;
+  width: 90%;
+  max-width: 1000px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+}
+
+.swing .col1 {
+  background-color: burlywood;
+  height: fit-content;
+  padding: 10px;
+}
+
+.swing .col1 img {
+  border-radius: 5px;
+  width: 70%;
+  margin: auto;
+  align-self: center;
+}
+
+.swing .col2 {
+  background-color: burlywood;
+  display: flex;
+  flex-direction: column;
+  height: fit-content;
+  padding: 10px;
+}
+
+.swing .where-subcontainer {
+  display: flex;
+  flex-direction: column;
+}
+
+.name-email {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
+.swing-subcontainer input {
+  border: 0.5px solid #808080;
+  padding: 10px;
+  font-size: 15px;
+  width: 100%;
+}
+
+.swing .btn {
+  width: fit-content;
+  align-self: flex-end;
+}
+
+.swing button {
+  background-color: #000;
+  color: #fff;
+  border: none;
+  font-size: 1.2rem;
+  padding: 10px;
+  margin: 10px auto 3rem;
+  align-self: flex-end;
+  justify-self: right;
+}
+
+footer {
+  background-color: #616161;
+  color: #fff;
+  height: fit-content;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 3rem;
+}
+
+footer:hover {
+  background-color: #000;
+}
+
+footer button {
+  width: fit-content;
+  padding: 10px 20px;
+  border: none;
+  margin-bottom: 1.3rem;
+}
+
+footer button:hover {
+  background-color: lightgray;
+}
+
+.media-links {
+  background-color: gold;
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 1.3rem;
+}
+
+footer a {
+  text-decoration: none;
+  color: #fff;
+}
