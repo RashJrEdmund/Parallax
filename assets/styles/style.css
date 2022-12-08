@@ -59,7 +59,6 @@ nav > a {
 /* ENDING SECTION1 AND STARTING SECTION2 */
 
 .section2 {
-  background-color: aqua;
   width: 98vw;
   max-width: 1000px;
   margin: auto;
@@ -79,12 +78,10 @@ nav > a {
 }
 
 .section2 .container {
-  background-color: brown;
   height: fit-content;
 }
 
 .section2 .container > div:nth-of-type(1) {
-  background-color: yellowgreen;
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 1rem;
@@ -118,7 +115,6 @@ nav > a {
 
 
 .section2 .container > div:nth-of-type(2) {
-  background-color: burlywood;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -131,7 +127,6 @@ nav > a {
 }
 
 .section2 .container > div:nth-of-type(2) p {
-  background-color: aqua;
   letter-spacing: 10px;
 }
 
@@ -210,7 +205,6 @@ nav > a {
 /* ENDING SECTION3 AND STARTING SECTION4 */
 
 .section4 {
-  background-color: green;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -226,7 +220,6 @@ nav > a {
 }
 
 .section4 .container {
-  background-color: brown;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   width: 90%;
@@ -245,6 +238,10 @@ nav > a {
   font-size: 1.2rem;
   padding: 15px;
   margin: 3rem auto;
+}
+
+.section4 button:hover {
+  background-color: gray;
 }
 
 /* ENDING SECTION4 AND STARTING SECTION5 */
@@ -268,7 +265,6 @@ nav > a {
 /* ENDING SECTION5 AND STARTING LAST SECTION */
 
 .last-section {
-  background-color: brown;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -284,7 +280,6 @@ nav > a {
 }
 
 .last-section .swing {
-  background-color: purple;
   width: 90%;
   max-width: 1000px;
   display: grid;
@@ -293,7 +288,6 @@ nav > a {
 }
 
 .swing .col1 {
-  background-color: burlywood;
   height: fit-content;
   padding: 10px;
 }
@@ -306,7 +300,6 @@ nav > a {
 }
 
 .swing .col2 {
-  background-color: burlywood;
   display: flex;
   flex-direction: column;
   height: fit-content;
@@ -348,6 +341,13 @@ nav > a {
   justify-self: right;
 }
 
+.swing button:hover {
+  background-color: #d3d3d3;
+  color: #000;
+}
+
+/* ENDING LAST-SECTION AND STARTING FOOTER SECTION */
+
 footer {
   background-color: #616161;
   color: #fff;
@@ -375,7 +375,6 @@ footer button:hover {
 }
 
 .media-links {
-  background-color: gold;
   display: flex;
   flex-direction: row;
   margin-bottom: 1.3rem;
@@ -384,4 +383,38 @@ footer button:hover {
 footer a {
   text-decoration: none;
   color: #fff;
+}
+
+@media only screen  and (max-width: 600px) {
+  .section1 span {
+    display: none;
+  }
+
+  .section2 .container > div:nth-of-type(1) {
+    grid-template-columns: 1fr;
+    width: 95vw;
+  }
+
+  .section4 .container {
+    grid-template-columns: 1fr;
+    width: 86vw;
+  }
+
+  .last-section .swing {
+    width: 95vw;
+    grid-template-columns: 1fr;
+  }
+
+  .name-email {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .name-email input {
+    margin-bottom: 0;
+  }
+
+  .section2-footer {
+    flex-direction: column;
+  }
 }
