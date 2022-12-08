@@ -191,3 +191,22 @@ nav > a {
 
 /* ENDING SECTION2 AND STARTING SECTION3 */
 
+.section3 {
+  background: url("../images/parallax2.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: 2rem;
+  color: #fff;
+  letter-spacing: 10px;
+}
+
+/* ENDING SECTION2 AND STARTING SECTION3 */
+
+
