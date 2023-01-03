@@ -1,3 +1,7 @@
+html {
+  scroll-behavior: smooth;
+}
+
 * {
   box-sizing: border-box;
   font-family: sans-serif;
@@ -34,7 +38,7 @@ nav {
   justify-content: space-between;
   padding: 10px 20px 10px 0;
   font-size: 1.1rem;
-  z-index: 3;
+  z-index: 30;
 }
 
 nav .sub-nav {
@@ -49,7 +53,6 @@ nav .home-and-list {
 }
 
 nav .varying-list {
-  /* background-color: green; */
   display: flex;
   flex-wrap: nowrap;
   align-items: center;
@@ -68,7 +71,7 @@ nav .varying-list.active-menu {
   height: fit-content;
   flex-direction: column;
   align-items: flex-start;
-  z-index: 0;
+  z-index: 1;
 }
 
 nav .varying-list.active-menu a {
@@ -331,7 +334,7 @@ nav .menu-icon span {
   display: flex;
   flex-direction: column;
   align-items: center;
-  height: 75vh;
+  height: fit-content;
 }
 
 .last-section > header {
@@ -427,6 +430,12 @@ footer:hover {
   background-color: #000;
 }
 
+footer > div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 footer button {
   width: fit-content;
   padding: 10px 20px;
@@ -449,6 +458,10 @@ footer a {
   color: #fff;
 }
 
+footer .media {
+  margin: 0 5px;
+}
+
 @media only screen  and (max-width: 600px) {
   .section1 .varying-list {
     position: absolute;
@@ -459,15 +472,6 @@ footer a {
   nav .varying-list .varying-search {
     display: unset;
   }
-
-  /* .section1 .active-menu {
-    display: flex;
-    position: relative;
-    top: 30px;
-    left: 0;
-    flex-direction: column;
-    flex-wrap: wrap;
-  } */
 
   nav .search-icon {
     display: none;

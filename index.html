@@ -14,11 +14,11 @@
         <nav>
             <div class="sub-nav">
                 <div class="home-and-list">
-                    <a href="#">HOME</a>
+                    <a href="#start">HOME</a>
                     <ul class="varying-list">
-                        <a href="#"><li><i class="fa fa-th"></i>ABOUT</li></a>
-                        <a href="#"><li><i class="fa fa-th"></i>PORTFOLIO</li></a>
-                        <a href="#"><li><i class="fa fa-envelope"></i>CONTACT</li></a>
+                        <a href="#about-me"><li><i class="fa fa-th"></i>ABOUT</li></a>
+                        <a href="#my-work"><li><i class="fa fa-th"></i>PORTFOLIO</li></a>
+                        <a href="#where-i-work"><li><i class="fa fa-envelope"></i>CONTACT</li></a>
                         <a href="#" class="varying-search"><li>SEARCH</li></a>
                     </ul>
                 </div>
@@ -34,7 +34,7 @@
     </div>
 
     <div class="section2">
-        <header>ABOUT ME</header>
+        <header id="about-me">ABOUT ME</header>
         <p class="text1">I Love Photography</p>
         <p>
             We have created a fictional "personal" website/blog, and our fictional character is a hobby photographer.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
@@ -95,7 +95,7 @@
         <header>PORTFOLIO</header>
     </div>
 
-    <div class="section4">
+    <div class="section4" id="my-work">
         <header>MY WORK</header>
         <p>Here are some of my latest lorem work ipsum tipsum.<br/> Click on the images to make them bigger</p>
 
@@ -116,7 +116,7 @@
         <header>CONTACT</header>
     </div>
 
-    <div class="last-section">
+    <div class="last-section" id="where-i-work">
         <header>WHERE I WORK</header>
         <p>I'd love your feedback!</p>
 
@@ -130,18 +130,18 @@
                 <p><i class="fa fa-envelope"></i>Email:mail@mail.com</p>
                 <p>Swing by for a cup of<i class="fa fa-coffee"></i>, or leave me a note</p>
 
-                <div class="swing-subcontainer">
+                <form class="swing-subcontainer">
                     <div class="name-email">
-                        <input type="text" placeholder="Name">
+                        <input type="text" placeholder="Name" id="form">
                         <input type="email" placeholder="Email">
                     </div>
                     <div class="message">
                         <input type="text" class="message" placeholder="Messages" style="width: 100%; height: 100%;">
                     </div>
-                </div>
-                <div class="btn">
+                </form>
+                <label for="form" class="btn">
                     <button>SEND MESSAGE</button>
-                </div>
+                </label>
             </div>
         </div>
     </div>
@@ -162,9 +162,10 @@
             <div>
                 <a href="#" target="_blank" class="media"><i class="fa-brands fa-twitter"></i></a>
                 <a href="#" target="_blank" class="media"><i class="fa-solid fa-at"></i></a>
+            </div>
         </div>
 
-        <div class="end">Powered by <a href="https://www.w3schools.com/w3css/default.asp">w3.css</a></div>
+        <p class="end">Powered by <a href="https://www.w3schools.com/w3css/default.asp">w3.css</a></p>
     </footer>
 
     <script src="assets/scripts/scripts.js"></script>
