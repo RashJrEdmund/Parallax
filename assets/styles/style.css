@@ -515,3 +515,10 @@ footer .media {
     flex-direction: column;
   }
 }
+
+@media only screen and (max-width: 370px) {
+  .section4 p {
+    font-style: italic;
+    padding-left: 10px;
+  }
+}
