@@ -17,9 +17,9 @@ window.addEventListener('scroll', (e) => {
   const navBar = document.querySelector('.nav-bar')
   const scrollableHeight = document.documentElement.scrollHeight - window.innerHeight // this line gives you the scrollable heigh
   const scrolledY = window.scrollY
-  if (window.scrollY >= 130) {
+  if (window.scrollY > 140) {
     navBar.style = 'background-color: #fff;'
-  }if (window.scrollY <= 130) {
+  } else {
     navBar.style = 'background-color: unset;'
   }
 }) 
