@@ -132,6 +132,7 @@ nav .menu-icon span {
   flex-direction: column;
   align-items: center;
   height: fit-content;
+  padding: 0 10px;
 }
 
 .section2 header {
@@ -139,7 +140,7 @@ nav .menu-icon span {
   font-size: 1.6rem;
 }
 
-.section2 > p:nth-of-type(1) {
+.section2 .text1 {
   font-style: italic;
 }
 
@@ -161,7 +162,7 @@ nav .menu-icon span {
 }
 
 .section2 .col1 header {
-  margin-top: 10px;
+  margin: 20px auto;
   font-size: 20px;
 }
 
@@ -273,10 +274,11 @@ nav .menu-icon span {
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding: 10px;
 }
 
 .section4 header {
-  margin-top: 3rem;
+  margin-top: 4rem;
   font-size: 1.5rem;
 }
 
@@ -334,11 +336,12 @@ nav .menu-icon span {
   flex-direction: column;
   align-items: center;
   height: fit-content;
+  padding: 10px 0;
 }
 
 .last-section > header {
+  margin-top: 4rem;
   font-size: 1.5rem;
-  margin-top: 3rem;
 }
 
 .last-section > p {
