@@ -28,7 +28,8 @@ body {
 }
 
 nav {
-  background-color: #fff;
+  /* background-color: #fff; */
+
   position: fixed;
   top: 0;
   width: 100vw;
