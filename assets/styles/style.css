@@ -28,8 +28,6 @@ body {
 }
 
 nav {
-  /* background-color: #fff; */
-
   position: fixed;
   top: 0;
   width: 100vw;
@@ -63,7 +61,6 @@ nav .varying-list {
 }
 
 nav .varying-list.active-menu {
-  background-color: #fff;
   margin: 0;
   padding: 0;
   width: 100vw;
