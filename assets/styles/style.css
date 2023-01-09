@@ -424,7 +424,7 @@ footer {
   height: fit-content;
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: flex-end;
   justify-content: center;
   padding: 3rem;
 }
@@ -433,36 +433,33 @@ footer:hover {
   background-color: #000;
 }
 
-footer > div {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
 footer button {
   width: fit-content;
   padding: 10px 20px;
   border: none;
   margin-bottom: 1.3rem;
+  align-self: flex-end;
 }
 
 footer button:hover {
-  background-color: lightgray;
+  background-color: #d3d3d3;
 }
 
 .media-links {
   display: flex;
-  flex-direction: row;
-  margin-bottom: 1.3rem;
+  align-items: center;
+  justify-content: center;
+  margin: 2px auto 1.3rem;
 }
 
 footer a {
-  text-decoration: none;
   color: #fff;
+  margin: 0 5px;
+  text-decoration: none;
 }
 
-footer .media {
-  margin: 0 5px;
+footer > p {
+  margin: auto;
 }
 
 @media only screen  and (max-width: 600px) {
