@@ -16,10 +16,13 @@ menuIcon.addEventListener('click', () => {
 window.addEventListener('scroll', (e) => {
   const navBar = document.querySelector('.nav-bar')
   const scrollableHeight = document.documentElement.scrollHeight - window.innerHeight // this line gives you the scrollable heigh
-  const scrolledY = window.scrollY
+  let scrolledY = window.scrollY
+  console.log('this the scrolledY', scrolledY)
   if (window.scrollY > 140) {
     navBar.style = 'background-color: #fff;'
+    varyingList.style = 'background-color: #fff;'
   } else {
     navBar.style = 'background-color: unset;'
+    varyingList.style = 'background-color: unset;'
   }
 }) 
