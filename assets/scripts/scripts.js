@@ -11,11 +11,10 @@ menuIcon.addEventListener('click', () => {
   })
 })
 
-window.addEventListener('scroll', (e) => {
+window.addEventListener('scroll', () => {
   const navBar = document.querySelector('.nav-bar')
-  const scrollableHeight = document.documentElement.scrollHeight - window.innerHeight // this line gives you the scrollable heigh
+  const scrollableHeight = document.documentElement.scrollHeight - window.innerHeight // this line gives you the scrollable height
   let scrolledY = window.scrollY
-  console.log('this the scrolledY', scrolledY)
   if (window.scrollY > 140) {
     navBar.style = 'background-color: #fff;'
     varyingList.style = 'background-color: #fff;'
@@ -23,4 +22,23 @@ window.addEventListener('scroll', (e) => {
     navBar.style = 'background-color: unset;'
     varyingList.style = 'background-color: unset;'
   }
-}) 
+})
+
+// let YscrollHolder = 0
+
+// window.addEventListener('scroll', () => {
+//   const scrollableHeight = document.documentElement.scrollHeight - window.innerHeight // this line gives you the scrollable height
+//   if (window.scrollY >= YscrollHolder) {
+//     console.clear()
+//     console.log('going down', window.scrollY, YscrollHolder)
+//     YscrollHolder = window.scrollY
+  
+//     console.log('scrollHolder', YscrollHolder)
+//   } else {
+//     console.clear()
+//     console.log('going up', window.scrollY, YscrollHolder, window.outerHeight)
+//     YscrollHolder = window.scrollY
+
+//     console.log('scrollHolder', YscrollHolder, YscrollHolder)
+//   }
+// })
